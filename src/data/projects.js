@@ -20,7 +20,7 @@ const projects = [
       "My first portfolio website. Building it gave me a solid foundation in HTML, CSS, and JavaScript, and since then my web development and design skills have grown a lot.",
     stack: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/hoishola/My-portfolio',
-    live: 'https://hoishola.com',
+    live: 'https://hoishola.github.io/My-portfolio/',
   },
   
 ];

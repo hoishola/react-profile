@@ -1,6 +1,6 @@
 # Personal Portfolio (React)
 
-My personal developer portfolio, built with React. Replaces my earlier plain HTML/CSS/JS site as my main portfolio going forward.
+My personal developer portfolio, built with React. Replaces my earlier plain HTML/CSS/JS site.
 
 ## Live Site
 hoishola.com
