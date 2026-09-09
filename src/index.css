@@ -6,8 +6,8 @@
   --border: #2a2e37;
   --text: #e8e6e1;
   --text-dim: #9a9fab;
-  --accent: #e8a33d;       /* ticker gold, use sparingly */
-  --signal: #4fa88f;       /* muted teal-green, active moments only */
+  --accent: #e8a33d;       
+  --signal: #4fa88f;       
 
   /* Type */
   --font-display: 'Space Grotesk', sans-serif;
@@ -26,7 +26,7 @@
   --max-width: 760px;
 }
 
-/* Theme variants: :root above holds the dark palette (default). .light overrides the same variable names, everything else references var(--bg), var(--text), etc. and never needs to know which theme is active. */
+/* Theme variants: :root above holds the dark palette (default). .light overrides the same variable names, everything else references var(--bg), var(--text), etc. */
 .dark {
   min-height: 100vh;
   background: var(--bg);
@@ -41,7 +41,7 @@
   --border: #c9c4b8;
   --text: #16171a;
   --text-dim: #55585f;
-  --accent: #a15f00;       /* darker gold for contrast on light bg */
+  --accent: #a15f00;       
   --signal: #1f7a63;
   background: var(--bg);
   color: var(--text);
@@ -102,7 +102,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Visible keyboard focus, don't skip this for accessibility */
+/* Visible keyboard focus */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--accent);
@@ -120,7 +120,7 @@ button:focus-visible {
 
 /* Hero */
 .hero {
-  padding-top: var(--space-6);
+  padding-top: 3rem;
 }
 
 .hero h1 {
@@ -376,21 +376,46 @@ footer {
 .theme-toggle {
   position: fixed;
   right: var(--space-2);
-  bottom: var(--space-2);
+  top: var(--space-2);
   z-index: 10;
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  padding: 0.25rem 0.35rem;
+  min-width: 1.85rem;
+  min-height: 1.85rem;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 1.15rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.dark .theme-toggle {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #111111;
+  background-clip: padding-box;
+}
+
+.light .theme-toggle {
+  background: #8b5cf6;
+  border-color: #8b5cf6;
+  color: #ffffff;
+  background-clip: padding-box;
 }
 
 .theme-toggle:hover {
   border-color: var(--accent);
+  background: var(--accent);
+}
+
+.light .theme-toggle:hover {
+  background: #8b5cf6;
 }
 
 /* Project card (click to open detail view) */

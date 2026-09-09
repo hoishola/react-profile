@@ -24,7 +24,7 @@ const Footer = ({ theme, onToggleTheme }) => {
           onClick={onToggleTheme}
           aria-label="Toggle color theme"
         >
-          {theme === 'dark' ? '☀ Light' : '● Dark'}
+          {theme === 'dark' ? '☀' : '☾'}
         </button>
       </div>
     </footer>

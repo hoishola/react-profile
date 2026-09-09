@@ -1,7 +1,3 @@
-// App.jsx
-// The root component. Holds the dark/light theme state (useState) and
-// assembles the portfolio sections in order.
-
 import { useEffect, useState } from 'react';
 import Hero from './components/Hero';
 import Bio from './components/Bio';
@@ -12,9 +8,7 @@ import Footer from './components/Footer';
 
 
 const App = () => {
-  // 'dark' or 'light' — this value becomes a class on the wrapper div,
-  // and index.css has a `.light` block that overrides the color variables.
-  const [theme, setTheme] = useState('dark');
+ const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
