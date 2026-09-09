@@ -6,8 +6,8 @@
   --border: #2a2e37;
   --text: #e8e6e1;
   --text-dim: #9a9fab;
-  --accent: #e8a33d;       /* ticker gold — use sparingly */
-  --signal: #4fa88f;       /* muted teal-green — "active" moments only */
+  --accent: #e8a33d;       /* ticker gold, use sparingly */
+  --signal: #4fa88f;       /* muted teal-green, active moments only */
 
   /* Type */
   --font-display: 'Space Grotesk', sans-serif;
@@ -26,12 +26,7 @@
   --max-width: 760px;
 }
 
-/* ==========================================================================
-   THEME VARIANTS
-   :root above holds the dark palette (default). The .light class overrides
-   the same variable names — everything else in the CSS just references
-   var(--bg), var(--text), etc. and never needs to know which theme is active.
-   ========================================================================== */
+/* Theme variants: :root above holds the dark palette (default). .light overrides the same variable names, everything else references var(--bg), var(--text), etc. and never needs to know which theme is active. */
 .dark {
   min-height: 100vh;
   background: var(--bg);
@@ -107,14 +102,14 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Visible keyboard focus — don't skip this for accessibility */
+/* Visible keyboard focus, don't skip this for accessibility */
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-/* Utility label style — mono font for tags, dates, status text */
+/* Utility label style: mono font for tags, dates, status text */
 .label {
   font-family: var(--font-mono);
   font-size: 0.75rem;
@@ -123,9 +118,7 @@ button:focus-visible {
   color: var(--text-dim);
 }
 
-/* ==========================================================================
-   HERO
-   ========================================================================== */
+/* Hero */
 .hero {
   padding-top: var(--space-6);
 }
@@ -165,9 +158,7 @@ button:focus-visible {
   filter: drop-shadow(0 0 6px var(--accent));
 }
 
-/* ==========================================================================
-   BIO / TIMELINE
-   ========================================================================== */
+/* Bio / Timeline */
 #bio h2,
 #projects h2 {
   font-size: 1.75rem;
@@ -193,10 +184,7 @@ button:focus-visible {
   color: var(--accent);
 }
 
-/* ==========================================================================
-   TECH STACK
-   ========================================================================== */
-
+/* Tech stack */
 .tech-stack {
   padding: var(--space-5) 0;
 }
@@ -299,9 +287,7 @@ button:focus-visible {
   color: #1572b6;
 }
 
-/* ==========================================================================
-   PROJECTS
-   ========================================================================== */
+/* Projects */
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -362,9 +348,7 @@ button:focus-visible {
   font-size: 0.85rem;
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
+/* Footer */
 footer {
   padding: var(--space-4) 0 var(--space-5);
 }
@@ -388,9 +372,7 @@ footer {
   gap: var(--space-2);
 }
 
-/* ==========================================================================
-   THEME TOGGLE
-   ========================================================================== */
+/* Theme toggle */
 .theme-toggle {
   position: fixed;
   right: var(--space-2);
@@ -406,15 +388,12 @@ footer {
   cursor: pointer;
   transition: border-color 0.15s ease;
 }
- 
 
 .theme-toggle:hover {
   border-color: var(--accent);
 }
 
-/* ==========================================================================
-   PROJECT CARD (click to open detail view)
-   ========================================================================== */
+/* Project card (click to open detail view) */
 .project-card-link {
   display: block;
   width: 100%;
@@ -444,9 +423,7 @@ footer {
   color: var(--accent);
 }
 
-/* ==========================================================================
-   PROJECT DETAIL VIEW
-   ========================================================================== */
+/* Project detail view */
 .project-detail {
   animation: fade-in 0.15s ease;
 }
@@ -520,9 +497,7 @@ footer {
   word-break: break-word;
 }
 
-/* ==========================================================================
-   CONTACT
-   ========================================================================== */
+/* Contact */
 #contact h2 {
   font-size: 1.75rem;
   margin: var(--space-1) 0 var(--space-2);
