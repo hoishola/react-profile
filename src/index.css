@@ -435,8 +435,9 @@ footer {
 .project-card-image {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 8;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.04);
   margin-bottom: var(--space-1);
   border: 1px solid var(--border);
   border-radius: 4px;
